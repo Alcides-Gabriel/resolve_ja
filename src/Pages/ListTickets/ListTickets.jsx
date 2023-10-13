@@ -13,36 +13,49 @@ const ListTickets = () => {
           <Table hover className="table mt-5">
             <thead>
               <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Data</th>
                 <th scope="col">Status</th>
+                <th scope="col">ID</th>
+                <th scope="col">Título</th>
                 <th scope="col">Descrição</th>
+                <th scope="col">Data</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>07/10/2023</td>
-                <td>
+                <th scope="row">
                   <Badge bg="warning">Aberto</Badge>
+                </th>
+                <td scope="row">1</td>
+                <td>
+                  <a href="/ticket/1">Sem conexão</a>
                 </td>
-                <td>Impressora parou de funcionar.</td>
+                <td>O wifi caiu.</td>
+                <td>07/10/2023</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>07/10/2023</td>
-                <td>
+                <th scope="row">
                   <Badge bg="danger">Fechado</Badge>
+                </th>
+                <td scope="row">2</td>
+                <td>
+                  <a href="/ticket/2">Impressora sem tinta</a>
                 </td>
-                <td>Computador não liga.</td>
+                <td>Não há tintas na impressora.</td>
+                <td>08/10/2023</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>07/10/2023</td>
+                <th scope="row">
+                  <Badge bg="primary">Resondido</Badge>
+                </th>
+                <td scope="row">3</td>
                 <td>
-                  <Badge bg="danger">Fechado</Badge>
+                  <a href="/ticket/3">PC não liga</a>
                 </td>
-                <td>Wifi caiu.</td>
+                <td>
+                  Ligamos na tomada e apertamos o botão de ligar, mas ele não dá
+                  resposta.
+                </td>
+                <td>09/10/2023</td>
               </tr>
             </tbody>
           </Table>
